@@ -9,7 +9,8 @@ public class FumoSwap : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        // Q (SHIFT FUMO)
+        if (Input.GetKey(KeyCode.Joystick1Button2))
         {
             SwitchObjects();
         }

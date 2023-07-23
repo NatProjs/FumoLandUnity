@@ -18,7 +18,8 @@ public class FumoDance : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.B))
+        // B (HAHA FUMO DANCE)
+        if (Input.GetKey(KeyCode.Joystick1Button3))
         {
             if (!isAudioPlaying)
             {
@@ -34,9 +35,7 @@ public class FumoDance : MonoBehaviour
             Dance();
         }
 
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) ||
-            Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) ||
-            Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Joystick1Button0))
         {
             StopDance();
         }

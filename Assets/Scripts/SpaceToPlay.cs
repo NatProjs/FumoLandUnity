@@ -7,7 +7,7 @@ public class SpaceToPlay : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Joystick1Button7))
         {
             LoadScene();
         }

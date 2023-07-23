@@ -24,8 +24,8 @@ public class FumoController : MonoBehaviour
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, 0.2f, groundLayer);
 
-        float moveX = Input.GetAxis("Horizontal");
-        float moveZ = Input.GetAxis("Vertical");
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveZ = Input.GetAxisRaw("Vertical");
 
         Vector3 movement = new Vector3(moveX, 0f, moveZ);
         movement = cameraTransform.TransformDirection(movement);
@@ -36,12 +36,12 @@ public class FumoController : MonoBehaviour
 
         rb.velocity = new Vector3(movement.x, rb.velocity.y, movement.z);
 
-        if (isGrounded && Input.GetButtonDown("Jump"))
+        if (isGrounded && Input.GetKey(KeyCode.Joystick1Button0))
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
 
-        if (isGrounded && Input.GetButtonDown("Groundpound"))
+        if (isGrounded && Input.GetKey(KeyCode.Joystick1Button5))
         {
             isDiving = true;
             rb.AddForce(Vector3.down * gpForce, ForceMode.Impulse);

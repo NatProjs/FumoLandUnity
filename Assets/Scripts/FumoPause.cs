@@ -19,7 +19,7 @@ public class FumoPause : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKey(KeyCode.Joystick1Button7))
         {
             SwitchObjects();
         }
