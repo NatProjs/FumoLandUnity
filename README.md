@@ -10,7 +10,7 @@
 
 ### Credits
 
-* [TyDev](https://twitter.com/TyDev_) - Coded the game :D
+* [BlitzEX](https://twitter.com/blitzexlmao) - Coded the game :D
 
 * [ZUN](https://twitter.com/korindo) - Owns the touhou characters and series (I think)
 
