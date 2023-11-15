@@ -10,7 +10,7 @@
 
 ### Credits
 
-* [BlitzEX](https://twitter.com/blitzexlmao) - Coded the game :D
+* [Blitz](https://twitter.com/blitzdotcs) - Coded the game :D
 
 * [ZUN](https://twitter.com/korindo) - Owns the touhou characters and series (I think)
 
